@@ -1,0 +1,47 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<h1>Fill Below Form To Register</h1>
+<form:form modelAttribute="student" action="/register">
+<table>
+       <tr>
+       <td>Enter Your Id:</td>
+       <td><form:input path="sid"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your Name:</td>
+       <td><form:input path="name"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your Password:</td>
+       <td><form:input path="password"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your Email:</td>
+       <td><form:input path="email"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your PhoneNo:</td>
+       <td><form:input path="phoneNo"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your Gender:</td>
+       <td><form:input path="gender"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your Address:</td>
+       <td><form:input path="address"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your City:</td>
+       <td><form:input path="city"/> </td>
+       </tr>
+       <tr>
+       <td>Enter Your State:</td>
+       <td><form:input path="state"/> </td>
+       </tr>
+       
+<tr>
+<td><input type="submit" value="save"></td>
+</tr>
+</table>
+</form:form>
+<a href="/views">View All Student Details</a><p></p>
